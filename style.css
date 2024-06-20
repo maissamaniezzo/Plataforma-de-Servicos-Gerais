@@ -1,0 +1,129 @@
+/* Gerais */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li {
+    color: #0000;
+    font-size: 16px;
+}
+
+/* Login */
+
+.page-login {
+    height: 100vh;
+    position: relative;
+}
+
+.title-login, .title-cadastro {
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border-width: 1px;
+    border-color: #E0E0E0;
+}
+
+.container-login {
+    width: 100vw;
+    height: 375px;  
+    margin-top: 220px;
+}
+
+.container-cadastro {
+    width: 100vw;
+    height: 375px;  
+    margin-top: 80px;
+}
+
+.container-login div, .container-cadastro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span-email, .span-senha, .span-cpf, .span-nome {
+    width: 400px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+div .decisao-cliente-servidor {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 32px;
+    margin-top: 24px;
+}
+
+.button-login, .button-cadastro {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border-color: #F99706;
+    color: #ffff;
+    background-color: #F99706;
+    width: 242px;
+    height: 40px;
+}
+
+.button-decisao {
+    border-radius: 8px;
+    border-color: #F99706;
+    color: #ffff;
+    background-color: #F99706;
+    width: 90px;
+    height: 32px;
+}
+
+.divider::after, .divider::before {
+    background-color: #E6E6E6;
+    content: '';
+    height: 1px;
+    margin: 0 1em;
+    width: 92px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    font-weight: normal;
+    color: #828282;
+}
+
+.divider a {
+    color: #F99706 !important;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
