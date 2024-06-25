@@ -49,6 +49,7 @@ input {
     height: 40px;
     border-width: 1px;
     border-color: #E0E0E0;
+    padding: 5px;
 }
 
 .container-login {
@@ -129,6 +130,11 @@ div .decisao-cliente-servidor {
 }
 
 /* Side bar */
+.sidebar {
+    height: 100vh;
+    width: 256px;
+}
+
 .sidebar .sidebar-componente {
     background-color: #ffff;
     height: 100vh;
@@ -164,4 +170,101 @@ div .decisao-cliente-servidor {
     height: 24px;
     width: 24px;
     margin-right: 16px;
+}
+
+/* Home do Servidor */
+.page-home {
+    display: flex;
+    flex-direction: row;
+}
+.page-home-servidor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page-home-servidor .page-home-titulo {
+    height: 134px;
+}
+
+.page-home-servidor .page-home-titulo p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 64px;
+    margin-top: 24px;
+}
+
+.page-home-servidor .lista-serviços-servidor p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.lista-serviços-servidor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-serviço-servidor {
+    width: 1060px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: #E0E0E0;
+    border-style: solid;
+    border-bottom-width: 1px;
+}
+
+.card-serviço-servidor .button-excluir {
+    border-radius: 8px;
+    border-color: #F99706;
+    color: #ffff;
+    background-color: #F99706;
+    width: 100px;
+    height: 26px;
+}
+
+.page-home-servidor .div-novoServico {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-home-servidor .titulo-div-novoServico {
+    width: 1060px;
+    align-items: start;
+}
+
+.page-home-servidor .div-novoServico p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.div-novoServico .inserir-novoServico {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-novoServico .inserir-novoServico input {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.div-novoServico .button-inserir {
+    border-radius: 8px;
+    border-color: #F99706;
+    color: #ffff;
+    background-color: #F99706;
+    width: 139px;
+    height: 40px;
 }

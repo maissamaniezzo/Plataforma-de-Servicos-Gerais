@@ -10,9 +10,9 @@ def login():
 def cadastro():
     return render_template('cadastro.html')
 
-@app.route('/home')
-def home():
-    return render_template('home.html')
+@app.route('/home_servidor')
+def home_servidor():
+    return render_template('home_servidor.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
