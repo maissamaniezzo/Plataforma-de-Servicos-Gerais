@@ -17,14 +17,14 @@ p, li {
     font-size: 16px;
 }
 
-/* Login */
+/* Login e Cadastro */
 
 .page-login {
     height: 100vh;
     position: relative;
 }
 
-.title-login, .title-cadastro {
+.title-site {
     margin-top: 24px;
     margin-left: 24px;
 }
@@ -128,3 +128,40 @@ div .decisao-cliente-servidor {
     margin-left: 10px;
 }
 
+/* Side bar */
+.sidebar .sidebar-componente {
+    background-color: #ffff;
+    height: 100vh;
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    border-right: #E0E0E0;
+    border-style: solid;
+    border-right-width: 1px;
+}
+
+.sidebar .div-sidebar {
+    margin-top: 24px;
+}
+
+.sidebar .div-button-sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sidebar .button-sidebar-servicos, .sidebar .button-sidebar-agenda {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.sidebar .sidebar-icone {
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+}
