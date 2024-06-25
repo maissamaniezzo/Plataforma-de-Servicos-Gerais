@@ -1,0 +1,31 @@
+{% extends 'header.html' %}
+{% block title %}Página Cadastro{% endblock %}
+
+{% block content %}
+  <div class="page-cadastro">
+      <div class="title-cadastro"><h1>NOME DO SITE</h1></div>
+      <div class="container-cadastro">
+          <div><h2>Cadastro</h2></div>
+          <div>
+              <span class="span-email"><h3>E-mail:</h3></span>
+              <input type="email" class="" id="email-input" name="email" placeholder="nome@gmail.com">
+              <div class="decisao-cliente-servidor">
+                  <span class="span-decisao">Você é um:</span>
+                  <button class="button-decisao" id="cliente">Cliente</button>
+                  <button class="button-decisao" id="servidor">Servidor</button>
+              </div>
+              <span class="span-nome"><h3>Nome:</h3></span>
+              <input type="string" class="" id="nome-input" name="nome" placeholder="Nome Sobrenome">
+              <span class="span-cpf"><h3>Cpf</h3></span>
+              <input type="number" class="" id="cpf-input" name="cpf" placeholder="000.000.000-00">
+              <span class="span-senha"><h3>Senha:</h3></span>
+              <input type="password" class="" id="password-input" name="password" placeholder="****">
+              <button class="button-cadastro">Cadastre</button>
+          </div>
+          <div class="divider">Ou faça login: <a href="/login" >Login</a></div>
+      </div>
+  </div>
+  
+
+  <script src=""></script>
+{% endblock %}
