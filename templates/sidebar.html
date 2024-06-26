@@ -1,14 +1,20 @@
 <div class="sidebar-componente">
-    <div class="title-site"><h1>NOME DO SITE</h1></div>
+    <div class="title-site"><h1>OMEGA</h1></div>
     <div class="div-sidebar">
-        <div class="div-button-sidebar"><button class="button-sidebar-servicos">
-            <span class="material-symbols-outlined sidebar-icone">search</span>
-            <div><span>Serviços</span></div>
-        </button></div>
-        <div class="div-button-sidebar"><button class="button-sidebar-agenda">
-            <span class="material-symbols-outlined sidebar-icone">calendar_month</span>
-            <div><span>Agenda</span></div>
-        </button></div>
+        <div class="div-button-sidebar">
+            <!-- Talvez precise ter um if aqui pra ver se é servidor ou cliente e mandar pra janela home certa -->
+            <!-- nisso adicionar o active também -->
+            <a class="button-sidebar-servicos" href="">
+                <span class="material-symbols-outlined sidebar-icone">search</span>
+                <div><span>Serviços</span></div>
+            </a>
+        </div>
+        <div class="div-button-sidebar">
+            <a class="button-sidebar-agenda {% if current_url == '/agenda' %}active{% endif %}" href="/agenda">
+                <span class="material-symbols-outlined sidebar-icone">calendar_month</span>
+                <div><span>Agenda</span></div>
+            </a>
+        </div>
     </div>
 </div>
 

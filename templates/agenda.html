@@ -1,0 +1,47 @@
+{% extends 'header.html' %}
+{% block title %}Agenda{% endblock %}
+
+{% block content %}
+  <div class="page-agenda">
+    <div class="sidebar">{% include 'sidebar.html' %}</div>
+    <div class="page-agendamentos">
+        <div class="page-agenda-titulo">
+          <p style="color: black">Seus agendamentos</p>
+        </div>
+        <div class="div-lista-agendamentos">
+          <div class="lista-agendamentos">
+          <!-- Fazer um for aqui com um if -->
+            <div class="card-agendamento">
+              <span class="servico-card">Eletricistinha</span>
+              <span class="nome-card">João Zé</span>
+              <div class="button-card">
+                <button class="button-excluir">Excuir</button>
+              </div>
+              <span class="data-card">31/02/2024</span>
+              <span class="celular-card">(99)99999-9999</span>
+            </div>
+            <div class="card-agendamento">
+              <span class="servico-card">Faxinas</span>
+              <span class="nome-card">Mariazinha</span>
+              <div class="button-card">
+                <button class="button-excluir">Excuir</button>
+              </div>
+              <span class="data-card">30/06/2024</span>
+              <span class="celular-card">99999-9999</span>
+            </div>
+            <div class="card-agendamento">
+              <span class="servico-card">Teste</span>
+              <span class="nome-card">Teste</span>
+              <div class="button-card">
+                <button class="button-excluir">Excuir</button>
+              </div>
+              <span class="data-card">31/02/2024</span>
+              <span class="celular-card">000</span>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src=""></script>
+{% endblock %}
