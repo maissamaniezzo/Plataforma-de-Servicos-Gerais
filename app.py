@@ -14,6 +14,11 @@ def cadastro():
 def home_servidor():
     return render_template('home_servidor.html', current_url=request.path)
 
+@app.route('/home_cliente')
+def home_cliente():
+    dropdown_options = ['Option 1', 'Option 2', 'Option 3']
+    return render_template('home_cliente.html', current_url=request.path, dropdown_options=dropdown_options)
+
 @app.route('/agenda')
 def agenda():
     return render_template('agenda.html', current_url=request.path)

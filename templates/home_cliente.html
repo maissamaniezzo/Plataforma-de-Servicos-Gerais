@@ -1,0 +1,186 @@
+{% extends 'header.html' %}
+{% block title %}OMEGA - Home{% endblock %}
+
+{% block content %}
+  <div class="page-home">
+    <div class="sidebar">{% include 'sidebar.html' %}</div>
+    <div class="page-home-cliente">
+        <div class="page-home-titulo">
+            <p style="color: black">Lista de Serviços</p>
+            <div class="barra-pesquisa">
+                <span class="material-symbols-outlined barra-pesquisa-icone">search</span>
+                <input type="text" class="" placeholder="Procurar serviço"></input>
+            </div>
+        </div>
+
+        <div class="lista-servicos-cliente">
+            <div class="lista-dropdown">
+                <!-- Fazer um for aqui -->
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <!--<a href="#">{{ option }}</a>-->
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <!--<a href="#">{{ option }}</a>-->
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <!--<a href="#">{{ option }}</a>-->
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <!--<a href="#">{{ option }}</a>-->
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <!--<a href="#">{{ option }}</a>-->
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown"  id="myDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <div class="escrito-drop">
+                            <span class="escrito-drop-button">Servico</span>
+                        </div>
+                        <div  class="icone-drop">
+                            <span class="material-symbols-outlined sidebar-icone">unfold_more</span>
+                        </div>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        {% for option in dropdown_options %}
+                            <!--<a href="#">{{ option }}</a>-->
+                            <div class="dropdown-card-servico">
+                                <span class="dropdown-card-nome">{{ option }}</span>
+                                <span class="dropdown-card-celular">teste</span>
+                                <button class="button-contratar">Contratar</button>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownContent");
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+{% endblock %}

@@ -186,17 +186,17 @@ div .decisao-cliente-servidor {
     display: flex;
     flex-direction: row;
 }
-.page-home-servidor, .page-agendamentos {
+.page-home-servidor, .page-agendamentos, .page-home-cliente {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.page-home-servidor .page-home-titulo, .page-agendamentos .page-agenda-titulo {
+.page-home-servidor .page-home-titulo, .page-agendamentos .page-agenda-titulo, .page-home-cliente .page-home-titulo {
     height: 134px;
 }
 
-.page-home-servidor .page-home-titulo p, .page-agendamentos .page-agenda-titulo p {
+.page-home-servidor .page-home-titulo p, .page-agendamentos .page-agenda-titulo p, .page-home-cliente .page-home-titulo p {
     font-weight: 600;
     font-size: 20px;
     margin-left: 64px;
@@ -230,7 +230,7 @@ div .decisao-cliente-servidor {
     border-bottom-width: 1px;
 }
 
-.card-serviço-servidor .button-excluir, .card-agendamento .button-excluir {
+.card-serviço-servidor .button-excluir, .card-agendamento .button-excluir, .dropdown-content .button-contratar {
     border-radius: 8px;
     border-color: #F99706;
     color: #ffff;
@@ -350,3 +350,98 @@ div .decisao-cliente-servidor {
     grid-row: 2;
     text-align: center;
 }
+
+/* Home Cliente */
+.barra-pesquisa {
+    margin-left: 64px;
+    border-width: 1px;
+    border-color: #E0E0E0;
+    border-radius: 8px;
+    width: 405px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.barra-pesquisa-icone {
+    height: 24px;
+    width: 24px;
+    color: #828282;
+    margin-left: 12px;
+    margin-right: 6px;
+}
+
+.barra-pesquisa input {
+    border-width: 0px;
+    color: #828282;
+}
+
+.page-home-cliente .lista-servicos-cliente {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lista-dropdown {
+    width: 1061px;
+    border-width: 1px;
+    border-color: #E0E0E0;
+    border-radius: 8px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-bottom-width: 1px;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.escrito-drop { 
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.icone-drop { 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    min-width: 160px;
+    width: 1060px;
+    margin-top: 1px;
+    z-index: 2;
+    background-color: #F4F4F4;
+}
+
+.dropdown-content .dropdown-card-servico:hover {
+    background-color: #E0E0E0;
+}
+
+.dropdown-content .dropdown-card-servico {
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+    border-color: #E0E0E0;
+}
+
+
+
