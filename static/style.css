@@ -68,7 +68,7 @@ input {
     margin-top: 80px;
 }
 
-.container-login div, .container-cadastro div {
+.container-login div, .container-cadastro div, .container-contratar div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ div .decisao-cliente-servidor {
     height: 40px;
 }
 
-.button-decisao {
+.button-decisao  {
     border-radius: 8px;
     border-color: #F99706;
     color: #ffff;
@@ -182,21 +182,21 @@ div .decisao-cliente-servidor {
 }
 
 /* Home do Servidor */
-.page-home, .page-agenda {
+.page-home, .page-agenda, .page-contratar {
     display: flex;
     flex-direction: row;
 }
-.page-home-servidor, .page-agendamentos, .page-home-cliente {
+.page-home-servidor, .page-agendamentos, .page-home-cliente, .div-page-contratar {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.page-home-servidor .page-home-titulo, .page-agendamentos .page-agenda-titulo, .page-home-cliente .page-home-titulo {
+.page-home-servidor .page-home-titulo, .page-agendamentos .page-agenda-titulo, .page-home-cliente .page-home-titulo, .div-page-contratar .page-contratar-titulo {
     height: 134px;
 }
 
-.page-home-servidor .page-home-titulo p, .page-agendamentos .page-agenda-titulo p, .page-home-cliente .page-home-titulo p {
+.page-home-servidor .page-home-titulo p, .page-agendamentos .page-agenda-titulo p, .page-home-cliente .page-home-titulo p, .page-home-titulo, .div-page-contratar .page-contratar-titulo p {
     font-weight: 600;
     font-size: 20px;
     margin-left: 64px;
@@ -444,5 +444,79 @@ div .decisao-cliente-servidor {
     border-color: #E0E0E0;
 }
 
+/* Página de Contratar */
+.espaco-card-servico-escolhido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.card-servico-escolhido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-width: 1px;
+    border-color: #E0E0E0;
+    width: 1061px;
+    padding: 3px 20px;
+    font-weight: 500;
+}
 
+.card-servico-escolhido .infos-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 2px;
+}
+
+.card-servico-escolhido .infos-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0px 2px;
+}
+
+.espaco-agendamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 64px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.infos-agendamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos-agendamento .legenda-agendamento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.infos-agendamento .legenda-agendamento .quadrado-legenda {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    border-radius: 2px;
+}
+
+.button-agendamento {
+    border-radius: 8px;
+    border-color: #F99706;
+    color: #ffff;
+    background-color: #F99706;
+    width: 120px;
+    height: 50px;
+}
+
+.espaco-buttom-agendamento {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

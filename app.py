@@ -21,6 +21,10 @@ def home_cliente():
     return render_template('home_cliente.html', current_url=request.path, 
                            dropdown_options=dropdown_options, dropdown_services=dropdown_services)
 
+@app.route('/contratar')
+def ontratar():
+    return render_template('contratar.html', current_url=request.path)
+
 @app.route('/agenda')
 def agenda():
     return render_template('agenda.html', current_url=request.path)

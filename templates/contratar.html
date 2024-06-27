@@ -1,0 +1,39 @@
+{% extends 'header.html' %}
+{% block title %}OMEGA - Contratar{% endblock %}
+
+{% block content %}
+  <div class="page-contratar">
+    <div class="sidebar">{% include 'sidebar.html' %}</div>
+    <div class="div-page-contratar">
+        <div class="page-contratar-titulo">
+            <p style="color: black">Contratar Serviço</p>
+        </div>
+        <div class="espaco-card-servico-escolhido">
+            <div class="card-servico-escolhido">
+                <div class="infos-1">
+                    <span>Jardineiro</span>
+                    <span>Maria Antônia</span>
+                </div>
+                <div class="infos-2">
+                    <span>(99)9999-9999</span>
+                </div>
+            </div>
+        </div>
+        <div class="espaco-agendamento">
+            <div class="infos-agendamento">
+                <span style="margin-bottom: 10px">Escolha uma data disponível:</span>
+                <div class="legenda-agendamento">
+                    <div class="quadrado-legenda disponivel" style="border: 1px solid; border-radius: 2px;"></div>
+                    <span>Disponível</span>
+                </div>
+                <div class="legenda-agendamento">
+                    <div class="quadrado-legenda ocupado" style="background-color: red;"></div>
+                    <span>Ocupado</span>
+                </div>
+                <div class="espaco-buttom-agendamento"><button class="button-agendamento">Contratar</button>
+            </div>
+            <div></div> <!-- colocar aqui o dataPicker -->
+        </div>
+    </div>
+  </div>
+{% endblock %}
