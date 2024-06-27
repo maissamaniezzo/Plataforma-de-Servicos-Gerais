@@ -421,10 +421,11 @@ div .decisao-cliente-servidor {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: inherit;
     background-color: #ffff;
     min-width: 160px;
-    width: 1060px;
+    width: 1061px;
+    margin-left: -1px;
     margin-top: 1px;
     z-index: 2;
     background-color: #F4F4F4;
