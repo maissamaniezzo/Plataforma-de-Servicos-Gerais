@@ -17,7 +17,9 @@ def home_servidor():
 @app.route('/home_cliente')
 def home_cliente():
     dropdown_options = ['Option 1', 'Option 2', 'Option 3']
-    return render_template('home_cliente.html', current_url=request.path, dropdown_options=dropdown_options)
+    dropdown_services = ['Servico 1', 'Servico 2', 'Servico 3', 'Service 4', 'Service 5']
+    return render_template('home_cliente.html', current_url=request.path, 
+                           dropdown_options=dropdown_options, dropdown_services=dropdown_services)
 
 @app.route('/agenda')
 def agenda():
