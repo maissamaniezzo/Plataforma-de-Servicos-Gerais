@@ -4,7 +4,7 @@
         <div class="div-button-sidebar">
             <!-- Talvez precise ter um if aqui pra ver se é servidor ou cliente e mandar pra janela home certa -->
             <!-- nisso adicionar o active também -->
-            <a class="button-sidebar-servicos" href="">
+            <a class="button-sidebar-servicos {% if (current_url == '/home_cliente' or current_url == '/home_servidor') %}active" {% endif %} href="" >
                 <span class="material-symbols-outlined sidebar-icone">search</span>
                 <div><span>Serviços</span></div>
             </a>
